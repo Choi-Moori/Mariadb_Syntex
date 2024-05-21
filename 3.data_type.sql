@@ -34,3 +34,8 @@ select cast(20200101 as date);
 select cast('20200101' as date);
 select convert(20200101,date);
 select convert('20200101',date);
+
+date_format('컬럼', '%Y-%m-%d');
+
+-- datetime 조회 방법
+select * from post where create_time like '2024-05%';

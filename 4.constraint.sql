@@ -48,5 +48,5 @@ select * from post;
 
 -- 시간 출력시 05 08 -> 5 8 로 출력을 원할 시
 -- cast(~~~) as unsigned(int 로 입력시 빨간줄 뜨지만 정상 출력 or signed 사용해도 된다)
--- 일반적으로 unsigned 사용
+-- 일반적으로 unsigned 사용 - (Hh Mm Dd)
 select cast(date_format(create_time, '%m') as unsigned) 시간 from post;
